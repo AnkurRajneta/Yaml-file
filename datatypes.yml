@@ -31,7 +31,7 @@ binaryNum: !!int 0b1101
 octalNum: !!int 06574
 hexa: !!int 0*45
 commaValue: !!int +540_000 # 540,000
-
+exponential numbers:6.023E56
 #floating point numbers
 marks: !float 56.89
 infinite: !!float .inf # .inf:floating point infinity
@@ -44,4 +44,4 @@ surname: !!null Null # or null Null ~
 
 # dates and time in yaml
 date: !!timestamp 2022-12-14
-india time: 2001-12-15T02
+india time: 2001-12-15T02:59:32.10-05:00
