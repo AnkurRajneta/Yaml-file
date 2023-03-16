@@ -47,3 +47,7 @@ cities:[new delhi,mumbai]
    -job: developer
 
   # This will be an array of hashtables
+
+  # same as
+
+  pair example: !!pairs [job:student, job:developer]

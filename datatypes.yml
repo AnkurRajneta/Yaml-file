@@ -14,6 +14,11 @@ this will
 all be
 in one single line
 
+great:|
+It is great
+to be present
+in good environment #this will be in a single line
+
 #same as
 message:!!str this will all be in one single line
 
@@ -41,7 +46,7 @@ not a num: .nan
 # null
 surname: !!null Null # or null Null ~
 ~: This is a null key
-
+key: ~ # null value
 # dates and time in yaml
 date: !!timestamp 2022-12-14
 india time: 2001-12-15T02:59:32.10-05:00
