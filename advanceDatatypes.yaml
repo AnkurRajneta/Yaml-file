@@ -88,4 +88,6 @@ cities:[new delhi,mumbai]
     <<: *likes
     dislikes: berries
 
+    # In the person 2 firstly it will copy all the likes and then it will override the dislikes
+
    
