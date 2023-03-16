@@ -7,7 +7,7 @@ student: !!seq
 cities:[new delhi,mumbai]
 
 #some of the keys of the seq will be empty
-#sparse seq
+#sparse seq 
 -hey
 -how
 -
@@ -51,3 +51,41 @@ cities:[new delhi,mumbai]
   # same as
 
   pair example: !!pairs [job:student, job:developer]
+
+  # this will be an array of hashtables
+
+  # !!set will allow you to have unique values
+
+  names: !!set
+  ? Ankur
+  ?shekhar
+  ?vidit
+
+  #dictionary !!omap
+  People: !!omap
+   -Ankur
+     name: Ankur Rajneta
+     age: 22
+      height: 665
+   -Shekhar
+      name: Shekhar Dayal
+      age: 24
+      height: 675
+
+  # reusing some properties using anchors
+ likings: &likes
+    fav fruit: apple
+     dislikes: grapes
+
+  person1:
+    name: Ankur Rajneta
+    age: 22
+    <<: *likes
+  
+  person2:
+    name: Shekhar Dayal
+    age: 24
+    <<: *likes
+    dislikes: berries
+
+   
